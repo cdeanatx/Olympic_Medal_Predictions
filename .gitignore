@@ -133,3 +133,6 @@ resources/
 
 # CSVs
 *.csv
+
+# Jupyter Notebooks
+*.ipynb
