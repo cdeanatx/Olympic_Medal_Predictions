@@ -136,3 +136,7 @@ resources/
 
 # Jupyter Notebooks
 *.ipynb
+
+# R stuff
+.Rproj.user
+*.Rproj
