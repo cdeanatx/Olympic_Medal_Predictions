@@ -1,15 +1,7 @@
 # Importing the necessary libraries
 import warnings
 warnings.simplefilter('ignore')
-
-get_ipython().run_line_magic('matplotlib', 'inline')
-import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
-from datetime import timedelta
-from datetime import datetime
-from math import log
-from sklearn import tree
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -135,7 +127,7 @@ cm = confusion_matrix(y_test, rf_predictions)
 cm_df = pd.DataFrame(
     cm, index=["Actual 0", "Actual 1"], columns=["Predicted 0", "Predicted 1"])
 print("Confusion Matrix")
-display(cm_df)
+print(cm_df)
 print(f"Accuracy Score : {acc_score}")
 print("Classification Report")
 print(classification_report(y_test, rf_predictions))
