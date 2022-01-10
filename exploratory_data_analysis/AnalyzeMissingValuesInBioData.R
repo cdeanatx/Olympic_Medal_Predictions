@@ -1,8 +1,8 @@
 library(tidyverse)
 library(reshape2)
 
-results <- read.csv('resources/athlete_events.csv')
-regions <- read.csv('resources/noc_regions.csv')
+results <- read.csv('../resources/athlete_events.csv')
+regions <- read.csv('../resources/noc_regions.csv')
 
 # Join CSVs on NOC and change column names to lowercase
 historical_results <- left_join(results, regions, by = "NOC")
