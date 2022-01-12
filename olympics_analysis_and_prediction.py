@@ -23,7 +23,7 @@ data_stats = olympic_data.describe()
 column_null_counts = olympic_data.isnull().sum(axis=0)
 
 # Filling the NA Values in Medal to 'No Medal'
-olympic_data['Medal'] = olympic_data['Medal'].fillna(value='No Medal')
+olympic_data['medal'] = olympic_data['medal'].fillna(value='No Medal')
 olympic_data.head()
 
 olympic_data = olympic_data.dropna()
@@ -34,38 +34,38 @@ countries = ['USA','BRA','GER','AUS','FRA']
 sports = ['Athletics']
 
 # Filtering on the most important features
-olympic_data = olympic_data[olympic_data['NOC'].isin(countries)]
-olympic_data = olympic_data[olympic_data['Season'] == 'Summer']
-olympic_data = olympic_data[olympic_data['Height'].notna()]
-olympic_data = olympic_data[olympic_data['Age'].notna()]
-olympic_data['Height (m)'] = olympic_data['Height']/100
-olympic_data = olympic_data[olympic_data['Weight'].notna()] 
-olympic_data['BMI'] = round(olympic_data['Weight']/(olympic_data['Height (m)']*olympic_data['Height (m)']), 2)
+olympic_data = olympic_data[olympic_data['noc'].isin(countries)]
+olympic_data = olympic_data[olympic_data['season'] == 'Summer']
+olympic_data = olympic_data[olympic_data['height'].notna()]
+olympic_data = olympic_data[olympic_data['age'].notna()]
+olympic_data['height (m)'] = olympic_data['height']/100
+olympic_data = olympic_data[olympic_data['weight'].notna()] 
+olympic_data['bmi'] = round(olympic_data['weight']/(olympic_data['height (m)']*olympic_data['height (m)']), 2)
 # olympic_data = olympic_data[olympics['Medal'] == 'Gold']
 # wins = ['Gold','Bronze']
 # olympic_data = olympic_data[olympic_data['Medal'].isin(wins)]
 
 # Assign "Medal" to the Medal column if the athlete got Bronze, Silver, or Gold. Otherwise, assign "Non-Medal"
-olympic_data.loc[(olympic_data['Medal'] == 'Gold'),'Medal'] = 'Medal'
-olympic_data.loc[(olympic_data['Medal'] == 'Silver'),'Medal'] = 'Medal'
-olympic_data.loc[(olympic_data['Medal'] == 'Bronze'),'Medal'] = 'Medal'
-olympic_data.loc[(olympic_data['Medal'].isna()),'Medal'] = 'Non-Medal'
+olympic_data.loc[(olympic_data['medal'] == 'Gold'),'medal'] = 'Medal'
+olympic_data.loc[(olympic_data['medal'] == 'Silver'),'medal'] = 'Medal'
+olympic_data.loc[(olympic_data['medal'] == 'Bronze'),'medal'] = 'Medal'
+olympic_data.loc[(olympic_data['medal'].isna()),'medal'] = 'Non-Medal'
 
 # Split the data on year = 2016
-olympics_df = olympic_data[olympic_data['Year'] < 2016]
-olympics_2016 = olympic_data[olympic_data['Year'] == 2016]
+olympics_df = olympic_data[olympic_data['year'] < 2016]
+olympics_2016 = olympic_data[olympic_data['year'] == 2016]
 
 # Using features with the highest importance
-X = pd.get_dummies(olympics_df[["Sex", "Age", "Height", "Weight", "BMI", "NOC"]])
+X = pd.get_dummies(olympics_df[["sex", "age", "height", "weight", "bmi", "noc"]])
 # X = olympics[["BMI","NOC"]]
-y = olympics_df["Medal"]
+y = olympics_df["medal"]
 print(X.shape, y.shape)
 print(X)
 print(y)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
-X_2016 = pd.get_dummies(olympics_2016[["Sex", "Age", "Height", "Weight", "BMI", "NOC"]])
-y_2016 = olympics_2016["Medal"]
+X_2016 = pd.get_dummies(olympics_2016[["sex", "age", "height", "weight", "bmi", "noc"]])
+y_2016 = olympics_2016["medal"]
 
 ### Logistic Regression
 classifier = LogisticRegression()
