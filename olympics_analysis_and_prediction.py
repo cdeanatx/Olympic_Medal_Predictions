@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, classification_report
 
 # Reading the dataset
-olympic_data = pd.read_csv("./Resources/athlete_events.csv")
+olympic_data = pd.read_csv("./Resources/recent_olympic_data.csv")
 
 # printing the first few records
 olympic_data.head()
