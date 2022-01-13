@@ -46,4 +46,4 @@ ax.set_title('Mens Swimming Weight Dist')
 
 olympic2_df[olympic2_df.sport=="Shooting"].groupby(["sex", "event"])["height", "weight", "age"].mean()
 
-olympic2_df[olympic2_df.sport=="Cycling"].groupby(["sex", "event"])["height", "weight", "age"].mean()
+olympic2_df[olympic2_df.sport=="Cycling"].groupby(["sex", "event"])["height", "weight", "age"].mean() 
