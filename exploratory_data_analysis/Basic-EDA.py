@@ -82,3 +82,6 @@ plt.savefig('exploratory_data_analysis/plots/male_swimming_height_weight_by_even
 womens_swimming_df = swimming_df[swimming_df['sex'] == 'F']
 sns.relplot(x= 'height', y='weight', hue='event', data = womens_swimming_df)
 plt.savefig('exploratory_data_analysis/plots/female_swimming_height_weight_by_event.png')
+
+# Average height, weight, age by sport/event
+olympic2_df.groupby(["sport","event"])["height", "weight", "age"].mean()
