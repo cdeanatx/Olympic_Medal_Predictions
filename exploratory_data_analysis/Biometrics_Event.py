@@ -3,7 +3,8 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-olympic_data = "data.csv"
+olympic_data = "resources/recent_olympic_data.csv"
+olympic_df = pd.read_csv(olympic_data)
 
 olympic_df = pd.read_csv(olympic_data)
 olympic_df.head()
