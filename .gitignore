@@ -141,3 +141,4 @@ resources/
 .Rproj.user
 *.Rproj
 .Rhistory
+.DS_Store
