@@ -194,13 +194,14 @@ event_categories <- list(
     # Events are categorized based on "type"/length of race. This resulted in loosely correlated median weights
     canoeing = list(
         
-        slalom  = c('Kayak Singles, Slalom', 'Canadian Doubles, Slalom', 'Canadian Singles, Slalom'),
-        `200m`  = c('Kayak Singles, 200 metres', 'Canadian Singles, 200 metres', 'Kayak Doubles, 200 metres'),
-        `500m`  = c('Kayak Singles, 500 metres', 'Kayak Doubles, 500 metres', 'Canadian Singles, 500 metres',
-                    'Canadian Doubles, 500 metres', 'Kayak Fours, 500 metres'),
-        `1000m` = c('Kayak Fours, 1,000 metres', 'Canadian Singles, 1,000 metres', 'Kayak Singles, 1,000 metres',
-                    'Kayak Doubles, 1,000 metres', 'Canadian Doubles, 1,000 metres')
-        
+        # Not enough data, only present for 2 olympic games
+        drop_events        = c('Kayak Singles, 200 metres', 'Canadian Singles, 200 metres', 'Kayak Doubles, 200 metres'),
+        slalom             = c('Kayak Singles, Slalom', 'Canadian Doubles, Slalom', 'Canadian Singles, Slalom'),
+        straight_race      = c('Kayak Singles, 500 metres', 'Kayak Doubles, 500 metres', 'Canadian Singles, 500 metres',
+                               'Canadian Doubles, 500 metres', 'Kayak Fours, 500 metres', 'Kayak Singles, 1,000 metres',
+                               'Kayak Fours, 1,000 metres', 'Canadian Singles, 1,000 metres',
+                               'Kayak Doubles, 1,000 metres', 'Canadian Doubles, 1,000 metres')
+
     ),
     
     # Events are categorized based on "type". This resulted in loosely correlated median weights
