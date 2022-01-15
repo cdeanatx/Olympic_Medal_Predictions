@@ -296,8 +296,13 @@ for (row in 1:nrow(results_cleaned_sports)) {
 # Add event category as a column to the cleaned participant df
 clean_participant_df <- results_cleaned_sports %>%
     mutate(event_category = event_cat) %>%
-    filter(event_category != 'drop_events') %>% 
+    filter(event_category != 'drop_events') %>%
     relocate(id:sport, event_category)
+
+# Concatenate sport to the event category for sports with weight-based categories
+concat_sports = c('Boxing', 'Judo', 'Weightlifting', 'Wrestling')
+clean_participant_df <- clean_participant_df %>%
+    mutate(event_category = ifelse(sport %in% concat_sports, str_c(tolower(sport), '_', event_category), event_category))
 
 # Save finalized participant dataset to CSV
 write_csv(clean_participant_df, 'resources/cleaned_olympic_data.csv')
