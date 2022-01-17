@@ -69,11 +69,14 @@ df.head()
 # In df, columns 0&1 correspond to sex value, 2&3 correspond to season and other 52 correspond to event_category 
 
 # example of a label encoding
+olympic_data_encode = olympic_data.copy()
+olympic_data_encode.head()
+
 labelEncoder = preprocessing.LabelEncoder()
 cat_cols = ["sex","season","event_category","region"]
 mapping_dict ={}
 for col in cat_cols:
-    olympic_data[col] = labelEncoder.fit_transform(olympic_data[col])
+    olympic_data_encode[col] = labelEncoder.fit_transform(olympic_data_encode[col])
  
     le_name_mapping = dict(zip(labelEncoder.classes_,
                         labelEncoder.transform(labelEncoder.classes_)))
