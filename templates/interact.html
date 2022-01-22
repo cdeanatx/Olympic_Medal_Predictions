@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+      <script></script>
+
+      <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="../static/css/style.css">
+
+      <title>Olympics Data Analysis</title>
+  </head>
+
+  <body>
+    <div class="banner">
+        <h1 class="main-title">Welcome to Olympics Analysis!</h1>
+        
+        <a title="Original author: Pierre de Coubertin (1863-1937), Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Olympic_rings_without_rims.svg" target="_blank">
+          <img class="center" width="256" alt="Olympic rings without rims" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/256px-Olympic_rings_without_rims.svg.png"></a>
+        
+      <nav class ="navigation">
+          <ul>
+            <li class="nav-list"><a href="parent.html">Home</a></li>
+            <li class="nav-list"><a href="{{ url_for('trends') }}">Trends</a></li>
+        <!--    <li class="nav-list"><a href="visualizations.html">Viz</a></li>-->
+            <li class="nav-list"><a href="{{ url_for('interact') }}">Interact!</a></li>
+          </ul>
+      </nav>
+
+<!--
+      <div class="musictitle">
+        <h4><strong>Enjoy listening to the iconic John Williams' Olympic Fanfare and Theme as you explore our website!</strong></h4>     
+      </div>
+
+      <div class="musicplayer">>
+        <audio controls class="center">
+          <source src="http://docs.google.com/uc?export=open&id=1prnF5uMkenZwJHN5nsh2IYHQMIM_6yTu" type="audio/mp3">
+          <p>Your browser does not support HTML5 audio :(</p>
+        </audio> 
+
+        <h6 class="center">
+        <a href="https://www.soundboard.com/sb/olympic_theme_song" target="_blank">Courtesy of Soundboard</a></h6>
+       </div>
+      -->
+    
+     
+    <div class="container">
+
+      <div class="musictitle">
+        <h4><strong>Enjoy listening to the iconic John Williams' Olympic Fanfare and Theme as you explore our website!</strong></h4>     
+      </div>
+
+      <div class="musicplayer">
+        <audio controls class="center">
+          <source src="http://docs.google.com/uc?export=open&id=1prnF5uMkenZwJHN5nsh2IYHQMIM_6yTu" type="audio/mp3">
+          <p>Your browser does not support HTML5 audio :(</p>
+        </audio> 
+
+        <h6 class="center">
+        <a href="https://www.soundboard.com/sb/olympic_theme_song" target="_blank">Courtesy of Soundboard</a></h6>
+       </div>
+
+        <!-- Add first machine learning model -->
+        
+        <div class="machinelearning1-title">
+          <h2>What Summer Olympics sport could you medal in?</h2>
+          <br>
+          <!---Initialize form structure and inputs, set method to "POST"--->
+          <div class="center" id="machinelearning1">        
+          <form action="{{url_for('predict1')}}" method = "post" name= "info1" class="info1">
+            <input type="text" id="age" name="age" placeholder="Enter Your Age" required="required"/><span style="color:red"> * </span>
+            <br>
+            <br>
+            <label for="sex">Select Your Sex</label>
+              <select id="sex" name="sex">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+              </select>
+            <br>
+            <br>
+            <input type="text" id="weight" name="weight" size="30" placeholder="Enter Your Weight in Kilograms" required="required"/><span style="color:red"> * </span>
+            <p><a class="btn-danger" href="https://www.capefearvalley.com/dashboard/nursing_portal/docs/wt_conversion_chart.pdf" role="button" target="_blank">Weight Conversion Table</a></p>
+            <br>
+            <input type="text" id="height" name="height" size="30" placeholder="Enter Your Height in Centimeters"/><span style="color:red" required="required"> * </span>
+              <p><a class="btn-danger" href="http://www.cpwy.org/doc/1943.pdf" role="button" target="_blank">Height Conversion Table</a></p>
+            <br>
+            <label for="region">Select Your Country</label>
+              <select id="region" name="region">
+                  <option value="0">Afghanistan</option>
+                  <option value="1">Albania</option>
+                  <option value="2">Algeria</option>
+                  <option value="3">American Samoa</option>
+                  <option value="4">Andorra</option>
+                  <option value="5">Angola</option>
+                  <option value="6">Antigua</option>
+                  <option value="7">Argentina</option>
+                  <option value="8">Armenia</option>
+                  <option value="9">Aruba</option>
+                  <option value="10">Australia</option>
+                  <option value="11">Austria</option>
+                  <option value="12">Azerbaijan</option>
+                  <option value="13">Bahamas</option>
+                  <option value="14">Bahrain</option>
+                  <option value="15">Bangladesh</option>
+                  <option value="16">Barbados</option>
+                  <option value="17">Belarus</option>
+                  <option value="18">Belgium</option>
+                  <option value="19">Belize</option>
+                  <option value="20">Benin</option>
+                  <option value="21">Bermuda</option>
+                  <option value="22">Bhutan</option>
+                  <option value="23">Bolivia</option>
+                  <option value="24">Bosnia and Herzegovina</option>
+                  <option value="25">Botswana</option>
+                  <option value="26">Brazil</option>
+                  <option value="27">Brunei</option>
+                  <option value="28">Bulgaria</option>
+                  <option value="29">Burkina Faso</option>
+                  <option value="30">Burundi</option>
+                  <option value="31">Cambodia</option>
+                  <option value="32">Cameroom</option>
+                  <option value="33">Canada</option>
+                  <option value="34">Cape Verde</option>
+                  <option value="35">Cayman Islands</option>
+                  <option value="36">Central African Republic</option>
+                  <option value="37">Chad</option>
+                  <option value="38">Chile</option>
+                  <option value="39">China</option>
+                  <option value="40">Colombia</option>
+              </select>   
+            <br>
+            <br>
+            <label for="event_category">Select A Summer Olympics Sport!</label>
+              <select id="event_category" name="event_category">
+                  <option value="1">Archery</option>
+                  <option value="4">Boxing Flyweight</option>
+                  <option value="5">Boxing Heavyweight</option>
+                  <option value="6">Boxing Lightweight</option>
+                  <option value="7">Boxing Middleweight</option>
+                  <option value="8">Boxing Welterweight</option>
+                  <option value="10">Diving</option>
+                  <option value="11">Equestrianism</option>
+                  <option value="12">Fencing</option>
+                  <option value="13">Field Events</option>
+                  <option value="16">Gymnastics</option>
+                  <option value="17">Heavyset Field Events</option>
+                  <option value="19">Judo Half Heavyweight</option>
+                  <option value="20">Judo Half Lightweight</option>
+                  <option value="21">Judo Heavyweight</option>
+                  <option value="22">Judo Lightweight</option>
+                  <option value="23">Judo Middleweight</option>
+                  <option value="26">Road Cycling</option>
+                  <option value="27">Rowing</option>
+                  <option value="28">Sailing</option>
+                  <option value="29">Shooting</option>
+                  <option value="32">Slalom</option>
+                  <option value="35">Straight Race</option>
+                  <option value="36">Swimming</option>
+                  <option value="37">Table Tennis</option>
+                  <option value="38">Tennis</option>
+                  <option value="39">Track</option>
+                  <option value="40">Track Cycling</option>
+                  <option value="41">Weightlifting Featherweight</option>
+                  <option value="42">Weightlifting Heavy Middleweight</option>
+                  <option value="43">Weightlifting Heavyweight</option>
+                  <option value="44">Weightlifting Light Middleweight</option>
+                  <option value="45">Weightlifting Super Heavyweight</option>
+                  <option value="46">Wrestling Featherweight</option>
+                  <option value="47">Wrestling Flyweight</option>
+                  <option value="48">Wrestling Heavyweight</option>
+                  <option value="49">Wrestling Middleweight</option>
+                  <option value="50">Wrestling Super Heavyweight</option>
+                  <option value="51">Wrestling Welterweight</option>
+              </select>   
+            <br>
+            <br>
+            <button type="submit" value="Submit" class="button1">Predict Your Summer Olympics Sport!</button>
+          </form>
+          <br> 
+          <!---Set placeholder for prediction output--->
+          <div class ="pred1">
+            <p class = "result1"><b>{{ prediction_text1 }}</b></p>
+          </div>
+        </div>
+      </div>
+        <br> 
+
+                
+        <!-- Add second machine learning model -->
+        
+        <div class="machinelearning2-title">
+          <h2>What Winter Olympics sport could you medal in?</h2>
+          <br>
+
+          <!---Initialize form structure and inputs, set method to "POST"--->
+          <div class="center" id="machinelearning2">        
+          <form action = "{{url_for('predict2')}}" method = "post" name= "info2" class="info2">
+            <input type="text" id="age" name="age" placeholder="Enter Your Age" required="required"/><span style="color:red"> * </span>
+            <br>
+            <br>
+            <label for="sex">Select Your Sex</label>
+              <select id="sex" name="sex">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+              </select>
+            <br>
+            <input type="text" id="weight" name="weight" size="30" placeholder="Enter Your Weight in Kilograms" required="required"/><span style="color:red"> * </span>
+              <p><a class="btn-danger" href="https://www.capefearvalley.com/dashboard/nursing_portal/docs/wt_conversion_chart.pdf" role="button" target="_blank">Weight Conversion Table</a></p>
+            <br>
+            <label for="height">Select Your Height</label>
+            <select id="height" name="height">
+              <option value="121.92">4'0" / 121.92 cm</option>
+              <option value="124.46">4'1" / 124.46 cm</option>
+            </select>
+            <input type="text" id="height" name="height" size="30" placeholder="Enter Your Height in Centimeters"/><span style="color:red" required="required"> * </span>
+              <p><a class="btn-danger" href="http://www.cpwy.org/doc/1943.pdf" role="button" target="_blank">Height Conversion Table</a></p>
+            <br>
+            <label for="region">Select Your Country</label>
+              <select id="region" name="region">
+                  <option value="0">Afghanistan</option>
+                  <option value="1">Albania</option>
+                  <option value="2">Algeria</option>
+                  <option value="3">American Samoa</option>
+                  <option value="4">Andorra</option>
+                  <option value="5">Angola</option>
+                  <option value="6">Antigua</option>
+                  <option value="7">Argentina</option>
+                  <option value="8">Armenia</option>
+                  <option value="9">Aruba</option>
+                  <option value="10">Australia</option>
+                  <option value="11">Austria</option>
+                  <option value="12">Azerbaijan</option>
+                  <option value="13">Bahamas</option>
+                  <option value="14">Bahrain</option>
+                  <option value="15">Bangladesh</option>
+                  <option value="16">Barbados</option>
+                  <option value="17">Belarus</option>
+                  <option value="18">Belgium</option>
+                  <option value="19">Belize</option>
+                  <option value="20">Benin</option>
+                  <option value="21">Bermuda</option>
+                  <option value="22">Bhutan</option>
+                  <option value="23">Bolivia</option>
+                  <option value="24">Bosnia and Herzegovina</option>
+                  <option value="25">Botswana</option>
+                  <option value="26">Brazil</option>
+                  <option value="27">Brunei</option>
+                  <option value="28">Bulgaria</option>
+                  <option value="29">Burkina Faso</option>
+                  <option value="30">Burundi</option>
+                  <option value="31">Cambodia</option>
+                  <option value="32">Cameroom</option>
+                  <option value="33">Canada</option>
+                  <option value="34">Cape Verde</option>
+                  <option value="35">Cayman Islands</option>
+                  <option value="36">Central African Republic</option>
+                  <option value="37">Chad</option>
+                  <option value="38">Chile</option>
+                  <option value="39">China</option>
+                  <option value="40">Colombia</option>
+              </select> 
+              <br>
+              <br>
+            <label for="event_category">Select A Winter Olympics Sport!</label>
+              <select id="event_category" name="Winter Olympics Sport">
+                  <option value="0">Alpine Skiing</option>
+                  <option value="2">Biathlon</option>
+                  <option value="3">Bobsleigh</option>
+                  <option value="9">Cross Country Skiing</option>
+                  <option value="14">Figure Skating</option>
+                  <option value="15">Freestyle Skiing</option>
+                  <option value="18">Ice Hockey</option>
+                  <option value="24">Luge</option>
+                  <option value="25">Nordic Combined</option>
+                  <option value="30">Short Track Speed Skating</option>
+                  <option value="31">Ski Jumping</option>
+                  <option value="33">Snowboarding</option>
+                  <option value="34">Speed Skating</option>
+              </select>   
+              <br>
+              <br>
+              <button type="submit" class="button2">Predict Your Winter Olympics Sport!</button>    
+          </form>
+            <br>
+            <!---Set placeholder for prediction output--->
+          <div class ="pred2">
+            <p class = "result2"><b>{{ prediction_text2 }}</b></p>
+          </div>
+          <br> 
+        </div>
+      </div>
+      <br> 
+
+</body>
+</html>

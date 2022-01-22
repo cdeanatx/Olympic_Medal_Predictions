@@ -1,0 +1,274 @@
+/*body {
+    color: #f7f7f7;
+}
+*/
+
+.jumbotron {
+    background-image: url("https://olympics.com/images/static/beijing-images/header/b2022-mountains-left-v2.svg");
+    background-size: 100%;
+    text-align: center;
+    
+}
+
+
+/* center banner and add padding */
+.banner h1 {
+
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 80px;
+    background: linear-gradient(to left,
+                    #ca2e2e,
+                    #ca2e2e,
+                    #3498db,
+                    #3498db,
+                    #19a019,
+                    #FFD700,
+                    #FFD700
+                    );
+    -webkit-background-clip: text;
+    color: transparent;   
+}
+
+/* ---- nav bar for all pages ---- */
+/* define navigation block */
+.navigation {
+    display: block;
+    height: 50px;
+}
+
+/* remove bullets, margin, padding, and text align */
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* display list items horizontally */
+.navigation li {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+}
+
+/* define block styling for the links */
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Cheltenham";
+    font-size: 27px;
+    font-weight: bold;
+    background: linear-gradient(to left,
+                    #ca2e2e,
+                    #ca2e2e,
+                    #3498db,
+                    #3498db,
+                    #19a019,
+                    #19a019
+                    );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* hover effect color */
+nav a:hover {
+    color: #FFD700;
+}
+
+
+/* headers formatting */
+
+.dashboard-title h2 {
+
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 40px;
+    -webkit-background-clip: text;
+    color:  #3498db;  
+    
+/* Apply animation to this element 	*/
+animation: dashboard-title 5s ease-out;
+}
+/* Move it (define the animation) */
+@keyframes dashboard-title {
+0%   { 
+transform: translateX(-200%); 		
+}
+100% { 
+transform: translateX(0%); 
+}
+}
+.tableauPlaceholder {
+
+    border: 5px solid; 
+    color:  #3498db
+    ;
+
+}
+
+.machinelearning1-title h2 {
+
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 40px;
+    -webkit-background-clip: text;
+    color:  #19a019;   
+}
+
+.machinelearning2-title h2 {
+
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 40px;
+    -webkit-background-clip: text;
+    color: #3498db ;   
+}
+
+
+
+/* create scrolling text */
+.musictitle { 
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+   }
+.musictitle h4 {    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    color: #ca2e2e;
+/* Apply animation to this element 	
+    animation: musictitle 5s ease-out;
+    } */
+/* Move it (define the animation) 
+@keyframes musictitle {
+ 0%   { 
+ transform: translateX(-200%); 		
+ }
+ 100% { 
+ transform: translateX(0%); 
+ }*/
+}   
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+     }
+   
+
+.button1 {
+
+  background-color: #FFD700; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button2 {
+
+    background-color: #FFD700; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.machinelearning1-title {
+    width: auto;
+    height: auto;
+    border: 5px solid; 
+    color: #19a019
+
+}
+
+.machinelearning2-title {
+    width: auto;
+    height: auto;
+    border: 5px solid; 
+    color: #3498db
+
+}
+
+.redteam h2 {
+
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 40px;
+    color: #ca2e2e
+ 
+
+}
+
+.redteam p {
+
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 25px;
+    background: linear-gradient(to left,
+                    #ca2e2e,
+                    #ca2e2e,
+                    #3498db,
+                    #3498db
+                    );
+    -webkit-background-clip: text;
+    color: transparent
+
+}
+
+
+.result1  {
+
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #4CAF50;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: white;
+    border-color: black;
+    font-family: Arial;
+    border-style: ridge   
+}
+
+
+.result2 {
+
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #3498db;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: white !important;
+    border-color: black;
+    font-family: Arial;
+    border-style: ridge   
+}
