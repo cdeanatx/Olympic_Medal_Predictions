@@ -140,3 +140,5 @@ resources/
 # R stuff
 .Rproj.user
 *.Rproj
+.Rhistory
+.DS_Store
