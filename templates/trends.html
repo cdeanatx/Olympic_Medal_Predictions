@@ -5,22 +5,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-      <script></script>
-
       <link 
         rel="stylesheet" 
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       />
-      <link rel="stylesheet" href="../../static/css/style.css">
+      <link rel="stylesheet" href="../static/css/style.css">
+      
 
-
-
-      <title>Olympics Data Analysis</title>
-  
+      <title>Olympics Data Analysis</title> 
   
   </head>
 
   <body>
+    
     <div class="banner">
         <h1 class="main-title">Welcome to Olympics Analysis!</h1>
         
@@ -29,7 +26,7 @@
         
       <nav class ="navigation">
           <ul>
-            <li class="nav-list"><a href="parent.html">Home</a></li>
+            <li class="nav-list"><a href="{{ url_for('index') }}">Home</a></li>
             <li class="nav-list"><a href="{{ url_for('trends') }}">Trends</a></li>
         <!--    <li class="nav-list"><a href="visualizations.html">Viz</a></li>   -->
             <li class="nav-list"><a href="{{ url_for('interact') }}">Interact!</a></li>
@@ -37,6 +34,20 @@
       </nav>
 
     <div class="container">
+    
+      <div class="musictitle">
+        <h4><strong>Enjoy listening to the iconic John Williams' Olympic Fanfare and Theme as you explore our website!</strong></h4>     
+      </div>
+
+      <div class="musicplayer">
+        <audio controls class="center">
+          <source src="http://docs.google.com/uc?export=open&id=1prnF5uMkenZwJHN5nsh2IYHQMIM_6yTu" type="audio/mp3">
+          <p>Your browser does not support HTML5 audio :(</p>
+        </audio> 
+
+        <h6 class="center">
+        <a href="https://www.soundboard.com/sb/olympic_theme_song" target="_blank">Courtesy of Soundboard</a></h6>
+      </div>
 
       <div class="dashboard-title">
         <h2>Dive into our Olympics Dashboard!</h2>
@@ -64,13 +75,10 @@
       <script type='text/javascript'>                    
       var divElement = document.getElementById('viz1641870311364');
       var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
       </script>
    
-
-      
-
-
 
         
     </div>

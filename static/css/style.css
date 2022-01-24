@@ -1,8 +1,4 @@
-/*body {
-    color: #f7f7f7;
-}
-*/
-
+/* Beijing 2022 background*/
 .jumbotron {
     background-image: url("https://olympics.com/images/static/beijing-images/header/b2022-mountains-left-v2.svg");
     background-size: 100%;
@@ -81,7 +77,7 @@ nav a:hover {
 }
 
 
-/* headers formatting */
+/* Tableau header formatting */
 
 .dashboard-title h2 {
 
@@ -93,7 +89,7 @@ nav a:hover {
     
 /* Apply animation to this element 	*/
 animation: dashboard-title 5s ease-out;
-}
+   }
 /* Move it (define the animation) */
 @keyframes dashboard-title {
 0%   { 
@@ -103,6 +99,7 @@ transform: translateX(-200%);
 transform: translateX(0%); 
 }
 }
+
 .tableauPlaceholder {
 
     border: 5px solid; 
@@ -110,27 +107,6 @@ transform: translateX(0%);
     ;
 
 }
-
-.machinelearning1-title h2 {
-
-    text-align: center;
-    padding-top: 50px;
-    font-family: "Luminari, Apple Chancery, cursive";
-    font-size: 40px;
-    -webkit-background-clip: text;
-    color:  #19a019;   
-}
-
-.machinelearning2-title h2 {
-
-    text-align: center;
-    padding-top: 50px;
-    font-family: "Luminari, Apple Chancery, cursive";
-    font-size: 40px;
-    -webkit-background-clip: text;
-    color: #3498db ;   
-}
-
 
 
 /* create scrolling text */
@@ -147,18 +123,31 @@ transform: translateX(0%);
     line-height: 50px;
     text-align: center;
     color: #ca2e2e;
-/* Apply animation to this element 	
-    animation: musictitle 5s ease-out;
-    } */
-/* Move it (define the animation) 
-@keyframes musictitle {
- 0%   { 
- transform: translateX(-200%); 		
- }
- 100% { 
- transform: translateX(0%); 
- }*/
+
 }   
+
+
+.machinelearningw-title h2 {
+
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 40px;
+    -webkit-background-clip: text;
+    color: #3498db ;   
+}
+
+.machinelearnings-title h2 {
+
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 40px;
+    -webkit-background-clip: text;
+    color:  #19a019;   
+}
+
+
 
 
 .center {
@@ -169,7 +158,20 @@ transform: translateX(0%);
      }
    
 
-.button1 {
+.buttonw {
+
+    background-color: #FFD700; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+      }
+    
+
+.buttons {
 
   background-color: #FFD700; 
   border: none;
@@ -181,33 +183,23 @@ transform: translateX(0%);
   font-size: 16px;
 }
 
-.button2 {
-
-    background-color: #FFD700; 
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-.machinelearning1-title {
+.machinelearningw-title {
     width: auto;
     height: auto;
     border: 5px solid; 
-    color: #19a019
+    color: #3498db;
 
 }
 
-.machinelearning2-title {
+
+.machinelearnings-title {
     width: auto;
     height: auto;
     border: 5px solid; 
-    color: #3498db
+    color: #19a019;
 
 }
+
 
 .redteam h2 {
 
@@ -238,7 +230,25 @@ transform: translateX(0%);
 }
 
 
-.result1  {
+
+.resultw {
+
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #3498db;
+    padding: 8px 16px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius:3px;
+    color: white !important;
+    border-color: black;
+    font-family: Arial;
+    border-style: ridge   
+}
+
+.results  {
 
     width: auto;
     height: auto;
@@ -255,20 +265,3 @@ transform: translateX(0%);
     border-style: ridge   
 }
 
-
-.result2 {
-
-    width: auto;
-    height: auto;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: #3498db;
-    padding: 8px 16px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius:3px;
-    color: white !important;
-    border-color: black;
-    font-family: Arial;
-    border-style: ridge   
-}
