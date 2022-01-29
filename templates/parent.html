@@ -30,8 +30,8 @@
       <nav class ="navigation">
           <ul>
             <li class="nav-list"><a href="parent.html">Home</a></li>
-            <li class="nav-list"><a href="{{ url_for('trends') }}">Trends</a></li>
-          <!--  <li class="nav-list"><a href="html/visualizations.html">Viz</a></li>-->
+            <li class="nav-list"><a href="{{ url_for('about') }}">About Us</a></li>            
+            <li class="nav-list"><a href="{{ url_for('trends') }}">Data Viz</a></li>
             <li class="nav-list"><a href="{{ url_for('interact') }}">Interact!</a></li>
           </ul>
       </nav>
@@ -47,11 +47,448 @@
         <div class="jumbotron">
           <p><a class="btn btn-lg center" href="https://olympics.com/en/beijing-2022/news" role="button" target="_blank">Get the Latest Beijing 2022 News!</a></p>
         </div>
+        <p><iframe src="https://giphy.com/embed/26ufmepVftH5Y2V7q" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a class="center" href="https://giphy.com/gifs/animations-olympics-rio-26ufmepVftH5Y2V7q">via GIPHY</a></p>
+        <br>
+        <br>
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-3dyu{background-color:#dae8fc;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-kd8o{background-color:#fcedcf;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-d4j9{background-color:#ecf4ff;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-m1qv{background-color:#dbf8db;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-8foh{background-color:#ffccc9;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-s9nq{background-color:#fed7ba;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-v1ip{background-color:#ded6e8;border-color:#ffffff;text-align:left;vertical-align:top}
+          .tg .tg-mrnn{background-color:#ffffc7;border-color:#ffffff;text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-8foh">Name</th>
+              <th class="tg-s9nq">Age</th>
+              <th class="tg-kd8o">Height (cm)</th>
+              <th class="tg-m1qv">Weight (kg)</th>
+              <th class="tg-d4j9">Sex</th>
+              <th class="tg-3dyu">Country</th>
+              <th class="tg-v1ip">Event Category</th>
+              <th class="tg-mrnn">Likelihood of Winning Gold</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-8foh">Ester Ledecka</td>
+              <td class="tg-s9nq">31</td>
+              <td class="tg-kd8o">180</td>
+              <td class="tg-m1qv">93</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Austria</td>
+              <td class="tg-v1ip">Alpine Skiing</td>
+              <td class="tg-mrnn">3.14%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Matthias Mayer</td>
+              <td class="tg-s9nq">26</td>
+              <td class="tg-kd8o">173</td>
+              <td class="tg-m1qv">68</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Czech Republic</td>
+              <td class="tg-v1ip">Alpine Skiing</td>
+              <td class="tg-mrnn">2.84%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Martin Fourcade</td>
+              <td class="tg-s9nq">32</td>
+              <td class="tg-kd8o">185</td>
+              <td class="tg-m1qv">79</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">France</td>
+              <td class="tg-v1ip">Biathlon</td>
+              <td class="tg-mrnn">2.35%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Charlotte Kalla</td>
+              <td class="tg-s9nq">34</td>
+              <td class="tg-kd8o">162</td>
+              <td class="tg-m1qv">57</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Sweden</td>
+              <td class="tg-v1ip">Cross Country Skiing</td>
+              <td class="tg-mrnn">5.39%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Iivo Niskanen</td>
+              <td class="tg-s9nq">29</td>
+              <td class="tg-kd8o">187</td>
+              <td class="tg-m1qv">80</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Finland</td>
+              <td class="tg-v1ip">Cross Country Skiing</td>
+              <td class="tg-mrnn">4.82%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Yuzuru Hanyu</td>
+              <td class="tg-s9nq">26</td>
+              <td class="tg-kd8o">173</td>
+              <td class="tg-m1qv">53</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Japan</td>
+              <td class="tg-v1ip">Figure Skating</td>
+              <td class="tg-mrnn">1.44%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Hanna Huskova</td>
+              <td class="tg-s9nq">29</td>
+              <td class="tg-kd8o">167</td>
+              <td class="tg-m1qv">57</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Belarus</td>
+              <td class="tg-v1ip">Freestyle Skating</td>
+              <td class="tg-mrnn">0.95%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Oleksander Abramenko</td>
+              <td class="tg-s9nq">33</td>
+              <td class="tg-kd8o">180</td>
+              <td class="tg-m1qv">82</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Ukraine</td>
+              <td class="tg-v1ip">Freestyle Skating</td>
+              <td class="tg-mrnn">0.69%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">David Gleirscher</td>
+              <td class="tg-s9nq">27</td>
+              <td class="tg-kd8o">183</td>
+              <td class="tg-m1qv">90</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Austria</td>
+              <td class="tg-v1ip">Luge</td>
+              <td class="tg-mrnn">5.26%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Natalie Geisenberger</td>
+              <td class="tg-s9nq">33</td>
+              <td class="tg-kd8o">183</td>
+              <td class="tg-m1qv">78</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Germany</td>
+              <td class="tg-v1ip">Luge</td>
+              <td class="tg-mrnn">13.41%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Jahannes Rydzek</td>
+              <td class="tg-s9nq">29</td>
+              <td class="tg-kd8o">180</td>
+              <td class="tg-m1qv">67</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Germany</td>
+              <td class="tg-v1ip">Nordic Combined</td>
+              <td class="tg-mrnn">7.43%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Wu Dajing</td>
+              <td class="tg-s9nq">27</td>
+              <td class="tg-kd8o">182</td>
+              <td class="tg-m1qv">73</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">China</td>
+              <td class="tg-v1ip">Short Track Speed Skating</td>
+              <td class="tg-mrnn">6.17%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Arianna Fontana</td>
+              <td class="tg-s9nq">31</td>
+              <td class="tg-kd8o">161</td>
+              <td class="tg-m1qv">63</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Italy</td>
+              <td class="tg-v1ip">Short Track Speed Skating</td>
+              <td class="tg-mrnn">7.71%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Andreas Wellinger</td>
+              <td class="tg-s9nq">25</td>
+              <td class="tg-kd8o">184</td>
+              <td class="tg-m1qv">65</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Germany</td>
+              <td class="tg-v1ip">Ski Jumping</td>
+              <td class="tg-mrnn">4.93%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Ester Ledecka</td>
+              <td class="tg-s9nq">26</td>
+              <td class="tg-kd8o">173</td>
+              <td class="tg-m1qv">68</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Czech Republic</td>
+              <td class="tg-v1ip">Snowboarding</td>
+              <td class="tg-mrnn">3.82%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Nevin Galmarini</td>
+              <td class="tg-s9nq">34</td>
+              <td class="tg-kd8o">172</td>
+              <td class="tg-m1qv">74</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Switzerland</td>
+              <td class="tg-v1ip">Snowboarding</td>
+              <td class="tg-mrnn">2.91%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Nao Kodaira</td>
+              <td class="tg-s9nq">35</td>
+              <td class="tg-kd8o">165</td>
+              <td class="tg-m1qv">61</td>
+              <td class="tg-d4j9">F</td>
+              <td class="tg-3dyu">Japan</td>
+              <td class="tg-v1ip">Speed Skating</td>
+              <td class="tg-mrnn">1.27%</td>
+            </tr>
+            <tr>
+              <td class="tg-8foh">Havard Lorentzen</td>
+              <td class="tg-s9nq">28</td>
+              <td class="tg-kd8o">187</td>
+              <td class="tg-m1qv">86</td>
+              <td class="tg-d4j9">M</td>
+              <td class="tg-3dyu">Norway</td>
+              <td class="tg-v1ip">Speed Skating</td>
+              <td class="tg-mrnn">5.29%</td>
+            </tr>
+          </tbody>
+          </table>
+      <br>          
+      <br>
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+          font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-3dyu{background-color:#dae8fc;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-kd8o{background-color:#fcedcf;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-d4j9{background-color:#ecf4ff;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-m1qv{background-color:#dbf8db;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-8foh{background-color:#ffccc9;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-s9nq{background-color:#fed7ba;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-v1ip{background-color:#ded6e8;border-color:#ffffff;text-align:left;vertical-align:top}
+        .tg .tg-mrnn{background-color:#ffffc7;border-color:#ffffff;text-align:left;vertical-align:top}
+        </style>
+        <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-8foh">Name</th>
+            <th class="tg-s9nq">Age</th>
+            <th class="tg-kd8o">Height (cm)</th>
+            <th class="tg-m1qv">Weight (kg)</th>
+            <th class="tg-d4j9">Sex</th>
+            <th class="tg-3dyu">Country</th>
+            <th class="tg-v1ip">Event Category</th>
+            <th class="tg-mrnn">Likelihood of Winning Gold</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="tg-8foh">Mete Gazoz</td>
+            <td class="tg-s9nq">22</td>
+            <td class="tg-kd8o">180</td>
+            <td class="tg-m1qv">60</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Turkey</td>
+            <td class="tg-v1ip">Archery</td>
+            <td class="tg-mrnn">1.22%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Selemon Barega</td>
+            <td class="tg-s9nq">21</td>
+            <td class="tg-kd8o">170</td>
+            <td class="tg-m1qv">53</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Ethiopia</td>
+            <td class="tg-v1ip">Track</td>
+            <td class="tg-mrnn">3.98%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Shaunae Miller-Uibo</td>
+            <td class="tg-s9nq">27</td>
+            <td class="tg-kd8o">185</td>
+            <td class="tg-m1qv">69</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Bahamas</td>
+            <td class="tg-v1ip">Track</td>
+            <td class="tg-mrnn">4.88%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Andy Cruz</td>
+            <td class="tg-s9nq">26</td>
+            <td class="tg-kd8o">168</td>
+            <td class="tg-m1qv">63</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Cuba</td>
+            <td class="tg-v1ip">Boxing</td>
+            <td class="tg-mrnn">6.93%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Kellie Harrington</td>
+            <td class="tg-s9nq">32</td>
+            <td class="tg-kd8o">170</td>
+            <td class="tg-m1qv">60</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Ireland</td>
+            <td class="tg-v1ip">Boxing</td>
+            <td class="tg-mrnn">1.72%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Benjamin Savsek</td>
+            <td class="tg-s9nq">34</td>
+            <td class="tg-kd8o">177</td>
+            <td class="tg-m1qv">74</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Slovenia</td>
+            <td class="tg-v1ip">Canoeing</td>
+            <td class="tg-mrnn">2.05%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Richard Carapez</td>
+            <td class="tg-s9nq">28</td>
+            <td class="tg-kd8o">170</td>
+            <td class="tg-m1qv">62</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Ecuador</td>
+            <td class="tg-v1ip">Cycling</td>
+            <td class="tg-mrnn">0.08%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Shi Tingmao</td>
+            <td class="tg-s9nq">30</td>
+            <td class="tg-kd8o">160</td>
+            <td class="tg-m1qv">52</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">China</td>
+            <td class="tg-v1ip">Diving</td>
+            <td class="tg-mrnn">6.96%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Lee Keifer</td>
+            <td class="tg-s9nq">27</td>
+            <td class="tg-kd8o">163</td>
+            <td class="tg-m1qv">49</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">USA</td>
+            <td class="tg-v1ip">Fencing</td>
+            <td class="tg-mrnn">12.23%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Artem Dolgopyat</td>
+            <td class="tg-s9nq">24</td>
+            <td class="tg-kd8o">164</td>
+            <td class="tg-m1qv">59</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Israel</td>
+            <td class="tg-v1ip">Gymnastics</td>
+            <td class="tg-mrnn">0.13%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Nora Gjakova</td>
+            <td class="tg-s9nq">28</td>
+            <td class="tg-kd8o">165</td>
+            <td class="tg-m1qv">57</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Kosovo</td>
+            <td class="tg-v1ip">Judo</td>
+            <td class="tg-mrnn">13.54%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Stefanos Ntouskos</td>
+            <td class="tg-s9nq">24</td>
+            <td class="tg-kd8o">186</td>
+            <td class="tg-m1qv">73</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Greece</td>
+            <td class="tg-v1ip">Rowing</td>
+            <td class="tg-mrnn">2.41%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Nina Christen</td>
+            <td class="tg-s9nq">27</td>
+            <td class="tg-kd8o">160</td>
+            <td class="tg-m1qv">57</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Switzerland</td>
+            <td class="tg-v1ip">Shooting</td>
+            <td class="tg-mrnn">1.02%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Caeleb Dressel</td>
+            <td class="tg-s9nq">24</td>
+            <td class="tg-kd8o">191</td>
+            <td class="tg-m1qv">92</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">USA</td>
+            <td class="tg-v1ip">Swimming</td>
+            <td class="tg-mrnn">14.92%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Kaylee McKeown</td>
+            <td class="tg-s9nq">20</td>
+            <td class="tg-kd8o">175</td>
+            <td class="tg-m1qv">60</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Australia</td>
+            <td class="tg-v1ip">Swimming</td>
+            <td class="tg-mrnn">5.05%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Kuo Hsing-chun</td>
+            <td class="tg-s9nq">27</td>
+            <td class="tg-kd8o">155</td>
+            <td class="tg-m1qv">58</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Taiwan</td>
+            <td class="tg-v1ip">Weightlifting</td>
+            <td class="tg-mrnn">2.58%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Fares El-Bakh</td>
+            <td class="tg-s9nq">23</td>
+            <td class="tg-kd8o">178</td>
+            <td class="tg-m1qv">95</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Egypt</td>
+            <td class="tg-v1ip">Weightlifting</td>
+            <td class="tg-mrnn">0.49%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Risako Kawai</td>
+            <td class="tg-s9nq">26</td>
+            <td class="tg-kd8o">160</td>
+            <td class="tg-m1qv">57</td>
+            <td class="tg-d4j9">F</td>
+            <td class="tg-3dyu">Japan</td>
+            <td class="tg-v1ip">Wrestling</td>
+            <td class="tg-mrnn">7.16%</td>
+          </tr>
+          <tr>
+            <td class="tg-8foh">Zhan Beleniuk</td>
+            <td class="tg-s9nq">30</td>
+            <td class="tg-kd8o">175</td>
+            <td class="tg-m1qv">87</td>
+            <td class="tg-d4j9">M</td>
+            <td class="tg-3dyu">Ukraine</td>
+            <td class="tg-v1ip">Wrestling</td>
+            <td class="tg-mrnn">3.93%</td>
+          </tr>
+        </tbody>
+        </table>
+        <br>
+        <br>
 
-       <div class="redteam">
-          <h2>The Red Team</h2>
-            <p>Curtis Dean<br>Sapana Donde<br>Mona Elahi<br>Elisabeth Green<br>Nikhila Rentam<br>Alissa Roegge</p>
-       </div>
+
+
     </div>
         
  

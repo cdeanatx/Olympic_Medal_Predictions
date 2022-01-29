@@ -1,9 +1,6 @@
 #Import main library
 import numpy as np
 
-#Placeholder Import for Alissa's model to be received Tues 1/25/22
-import pandas as pd
-
 #Import Flask modules
 from flask import Flask, request, render_template
 
@@ -18,17 +15,19 @@ app = Flask(__name__, template_folder = 'templates')
 def home():
     return render_template('parent.html')
 
-
 #create our other routes
 
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
     
 @app.route('/trends')
 def trends():
     return render_template('trends.html')
-
 
 @app.route("/interact")
 def interact():
@@ -65,22 +64,22 @@ def predictw():
         
         # Engage in preprocessing to prepare "to_predict_list" for prediction function
         to_predict_list = raw_list.copy()
+        del to_predict_list[7]
         del to_predict_list[5]
-        del to_predict_list[3]
         print(to_predict_list)
 
        # Conversion for weight
         if weight_option == "1":
             new_weight = "{:.2f}".format(float(weight) / 2.205)
             print(new_weight)
-            to_predict_list[2] = new_weight
-            print(to_predict_list)                      
+            to_predict_list[5] = new_weight
+            print(to_predict_list)                       
 
        # Conversion for height
         if height_option == "1":
             new_height = "{:.2f}".format(float(height) * 2.54)
             print(new_height)
-            to_predict_list[3] = new_height
+            to_predict_list[4] = new_height
             print(to_predict_list)
 
         # Return the result
@@ -121,22 +120,22 @@ def predicts():
         
         # Engage in preprocessing to prepare "to_predict_list" for prediction function
         to_predict_list = raw_list.copy()
+        del to_predict_list[7]
         del to_predict_list[5]
-        del to_predict_list[3]
         print(to_predict_list)
 
        # Conversion for weight
         if weight_option == "1":
             new_weight = "{:.2f}".format(float(weight) / 2.205)
             print(new_weight)
-            to_predict_list[2] = new_weight
+            to_predict_list[5] = new_weight
             print(to_predict_list)                      
 
        # Conversion for height
         if height_option == "1":
             new_height = "{:.2f}".format(float(height) * 2.54)
             print(new_height)
-            to_predict_list[3] = new_height
+            to_predict_list[4] = new_height
             print(to_predict_list)
 
         # Return the result
@@ -146,8 +145,6 @@ def predicts():
         else:
             return render_template('interact.html', prediction_texts = "Congratulations, you would medal in this summer sport!")         
         
-
-
 #Run app
 if __name__ == "__main__":
     app.run(debug=True)

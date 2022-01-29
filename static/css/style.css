@@ -101,7 +101,8 @@ transform: translateX(0%);
 }
 
 .tableauPlaceholder {
-
+    width: auto;
+    height: auto;
     border: 5px solid; 
     color:  #3498db
     ;
@@ -147,8 +148,11 @@ transform: translateX(0%);
     color:  #19a019;   
 }
 
-
-
+.giphy-embed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .center {
     display: block;
@@ -207,28 +211,132 @@ transform: translateX(0%);
     padding-top: 25px;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 40px;
-    color: #ca2e2e
- 
-
+    -webkit-background-clip: text;
+    color:  #ca2e2e;
 }
 
-.redteam p {
+
+
+
+h3.curtis-header {
 
     text-align: center;
-    padding-top: 25px;
     font-family: "Luminari, Apple Chancery, cursive";
-    font-size: 25px;
-    background: linear-gradient(to left,
-                    #ca2e2e,
-                    #ca2e2e,
-                    #3498db,
-                    #3498db
-                    );
-    -webkit-background-clip: text;
-    color: transparent
+    font-size: 30px;
+    font-weight: bold;
+    color: #00008B;
 
 }
 
+p.curtis {
+
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: #00008B;
+
+}
+
+h3.sapana-header {
+
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(240, 8, 124);
+
+}
+
+p.sapana {
+
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: rgb(240, 8, 124);
+
+}
+
+
+
+h3.elisabeth-header {
+
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 30px;
+    font-weight: bold;
+    color: #19a019;
+
+}
+
+
+p.elisabeth {
+
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: #19a019;
+
+}
+
+
+h3.nikhila-header {
+
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 30px;
+    font-weight: bold;
+    color: #7070FF;
+
+}
+
+p.nikhila {
+
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: #7070FF;
+
+}
+
+
+h3.mona-header {
+
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 30px;
+    font-weight: bold;
+    color: #ca2e2e;
+
+}
+
+p.mona {
+
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: #ca2e2e;
+
+}
+
+
+h3.alissa-header {
+
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 30px;
+    font-weight: bold;
+    color: #cc5500;
+
+}
+
+p.alissa {
+
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: #cc5500;
+
+}
 
 
 .resultw {
