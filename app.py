@@ -2,7 +2,7 @@
 import numpy as np
 
 #Import Flask modules
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect
 
 #Import joblib to open our machine learning model
 import joblib 
@@ -13,7 +13,7 @@ app = Flask(__name__, template_folder = 'templates')
 #create our "home" route using the "parent.html" page
 @app.route('/')
 def home():
-    return render_template('parent.html')
+    return redirect("/index")
 
 #create our other routes
 
