@@ -1,8 +1,8 @@
 library(tidyverse)
 library(reshape2)
 
-results <- read.csv('../resources/athlete_events.csv')
-regions <- read.csv('../resources/noc_regions.csv')
+results <- read.csv('resources/athlete_events.csv')
+regions <- read.csv('resources/noc_regions.csv')
 
 # Join CSVs on NOC and change column names to lowercase
 historical_results <- left_join(results, regions, by = "NOC")
@@ -80,9 +80,8 @@ running_na_percent_long <- melt(running_na_percent[,c('year', 'season', 'running
 
 # Plot running percent NAs by season
 plot_running_na_percent <- running_na_percent_long %>% ggplot(aes(x=factor(year), y=value)) +
-    geom_line(aes(x='1964'), size=3, color='firebrick4') +
     geom_bar(aes(fill=variable), stat='identity', color='black', position='dodge') +
-    theme(axis.text.x = element_text(angle=45), plot.title = element_text(hjust=.5, size=16), strip.text = element_text(size=14), axis.title = element_text(size=14)) +                       
+    theme(axis.text.x = element_text(angle=45, hjust=1), plot.title = element_text(hjust=.5, size=16), strip.text = element_text(size=14), axis.title = element_text(size=14)) +                       
     facet_wrap(~season, ncol=1, scales='free') +
     labs(x='Year', y='Running Percentage of NAs', title='Running % of NA by Year and Season')
 
