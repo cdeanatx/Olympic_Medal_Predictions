@@ -79,10 +79,14 @@ running_na_percent <- rbind(running_na_percent_summer, running_na_percent_winter
 running_na_percent_long <- melt(running_na_percent[,c('year', 'season', 'running_percent_records', 'running_percent_na_age', 'running_percent_na_height', 'running_percent_na_weight')], id.vars = c(1,2))
 
 # Plot running percent NAs by season
-plot_running_na_percent <- running_na_percent_long %>% ggplot(aes(x=factor(year), y=value)) +
+# plot_running_na_percent <- 
+    running_na_percent_long %>% ggplot(aes(x=factor(year), y=value)) +
     geom_bar(aes(fill=variable), stat='identity', color='black', position='dodge') +
-    theme(axis.text.x = element_text(angle=45, hjust=1), plot.title = element_text(hjust=.5, size=16), strip.text = element_text(size=14), axis.title = element_text(size=14)) +                       
+    theme(axis.text.x = element_text(angle=45, hjust=1), plot.title = element_text(hjust=.5, size=16),
+          strip.text = element_text(size=14, color='white'), axis.title = element_text(size=14),
+          legend.title = element_text(hjust=.5, face='bold'), strip.background = element_rect(fill='navy')) +                       
     facet_wrap(~season, ncol=1, scales='free') +
-    labs(x='Year', y='Running Percentage of NAs', title='Running % of NA by Year and Season')
+    labs(x='Year', y='Running Percentage of Missing Values', title='Aggregate % of Missing Values by Year and Season', fill = 'Aggregate %') +
+    scale_fill_discrete(labels = c('Total Records', 'Missing Age', 'Missing Height', 'Missing Weight'))
 
 
