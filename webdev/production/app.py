@@ -38,7 +38,7 @@ def interact():
 # prediction function for winter
 def ValuePredictorw(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,6)
-    modelw = joblib.load('easyensemblew_jlib')
+    modelw = joblib.load('webdev/production/easyensemblew_jlib')
     result = modelw.predict(to_predict)
     return result[0]
 
@@ -95,7 +95,7 @@ def predictw():
 # prediction function for summer
 def ValuePredictors(to_predict_list):
     to_predict = np.array(to_predict_list).reshape(1,6)
-    models = joblib.load('easyensembles_jlib')
+    models = joblib.load('webdev/production/easyensembles_jlib')
     result = models.predict(to_predict)
     return result[0]
 
