@@ -1,7 +1,7 @@
 # Olympics Analysis -- Web Development
 
 ## Overview of Olympic Medal Predictions analysis 
-The purpose of the Olympic Medal Predictions analysis was to develop a website comprised of four individual webpages to (1) honor the splendor, camaraderie, and beauty of the Olympics, and (2) showcase our team's (Team Red) interest in applying machine learning models to predict medaling in the Olympic games. The website features four individual webpages:
+The purpose of the Olympic Medal Predictions analysis was to develop a website to (1) honor the splendor, camaraderie, and beauty of the Olympics, and (2) showcase our team's (Team Red) interest in applying machine learning models to predict medaling in the Olympic games. The website features four individual webpages:
 
  - The "Home" page welcomes visitors to the website, introduces visitors to the purpose of the Olympic Medal Predictions analysis, and features our ordinal regression model to predict the chances of winning gold for actual gold medal winners from the PyeongChang 2018 and Tokyo 2020 games
 
