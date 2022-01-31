@@ -3,13 +3,12 @@
     background-image: url("https://olympics.com/images/static/beijing-images/header/b2022-mountains-left-v2.svg");
     background-size: 100%;
     text-align: center;
-    
+    font-size: 40px;
 }
 
 
-/* center banner and add padding */
+/* Format center banner and add padding */
 .banner h1 {
-
     text-align: center;
     padding-top: 50px;
     font-family: "Luminari, Apple Chancery, cursive";
@@ -27,14 +26,17 @@
     color: transparent;   
 }
 
-/* ---- nav bar for all pages ---- */
-/* define navigation block */
+
+/* ---- Navigation bar for all pages ---- */
+
+/* Define navigation block */
 .navigation {
     display: block;
     height: 50px;
 }
 
-/* remove bullets, margin, padding, and text align */
+
+/* Format navigation bar list */
 .navigation ul {
     list-style: none;
     padding: 0;
@@ -43,14 +45,16 @@
     padding-top: 5px;
 }
 
-/* display list items horizontally */
+
+/* Display list items horizontally */
 .navigation li {
     display: inline-block;
     margin-left: 30px;
     position: relative;
 }
 
-/* define block styling for the links */
+
+/* Define block styling for the links */
 .navigation a {
     display: inline-block;
     text-decoration: none;
@@ -71,21 +75,69 @@
     color: transparent;
 }
 
-/* hover effect color */
+
+/* Format hover effect color */
 nav a:hover {
     color: #FFD700;
+}
+
+
+/* Format headers on home page */
+.banner h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 65px;
+    background: linear-gradient(to left,
+                    #ca2e2e,
+                    #ca2e2e,
+                    #3498db,
+                    #3498db,
+                    #19a019,
+                    #FFD700,
+                    #FFD700
+                    );
+    -webkit-background-clip: text;
+    color: transparent;   
+}
+
+
+/* Format text and sub-headers on home page */
+
+.welcome {
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: black;
+
+}
+
+.ordinal-model {
+    text-align: left;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 20px;
+    color: black;
+}
+
+
+.header-omodel  {
+    text-align: center;
+    font-family: "Luminari, Apple Chancery, cursive";
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
 }
 
 
 /* Tableau header formatting */
 
 .dashboard-title h2 {
-
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 40px;
     -webkit-background-clip: text;
     color:  #3498db;  
+
     
 /* Apply animation to this element 	*/
 animation: dashboard-title 5s ease-out;
@@ -100,17 +152,17 @@ transform: translateX(0%);
 }
 }
 
+
+/* Appy formatting to Tableau Dashboard */
 .tableauPlaceholder {
     width: auto;
     height: auto;
     border: 5px solid; 
-    color:  #3498db
-    ;
-
+    color:  #3498db;
 }
 
 
-/* create scrolling text */
+/* Create scrolling text */
 .musictitle { 
     height: 50px;	
     overflow: hidden;
@@ -124,12 +176,11 @@ transform: translateX(0%);
     line-height: 50px;
     text-align: center;
     color: #ca2e2e;
-
 }   
 
 
+/* Format winter and summer machine learning headers */
 .machinelearningw-title h2 {
-
     text-align: center;
     padding-top: 50px;
     font-family: "Luminari, Apple Chancery, cursive";
@@ -148,22 +199,26 @@ transform: translateX(0%);
     color:  #19a019;   
 }
 
+
+/* Format giphys */
 .giphy-embed {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
+
+/* Format center class for various page elements */
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
-     }
+}
    
 
+/* Format buttons for winter and summer machine learning models */
 .buttonw {
-
     background-color: #FFD700; 
     border: none;
     color: black;
@@ -172,11 +227,10 @@ transform: translateX(0%);
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-      }
+}
     
 
 .buttons {
-
   background-color: #FFD700; 
   border: none;
   color: black;
@@ -187,12 +241,13 @@ transform: translateX(0%);
   font-size: 16px;
 }
 
+
+/* Format winter and summer forms */
 .machinelearningw-title {
     width: auto;
     height: auto;
     border: 5px solid; 
     color: #3498db;
-
 }
 
 
@@ -201,10 +256,11 @@ transform: translateX(0%);
     height: auto;
     border: 5px solid; 
     color: #19a019;
-
 }
 
 
+
+/* Format Red Team header */
 .redteam h2 {
 
     text-align: center;
@@ -216,131 +272,110 @@ transform: translateX(0%);
 }
 
 
-
-
+/* Format subheaders and text for each team member */
 h3.curtis-header {
-
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 30px;
     font-weight: bold;
     color: #00008B;
-
 }
+
 
 p.curtis {
-
     text-align: left;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 20px;
     color: #00008B;
-
 }
 
-h3.sapana-header {
 
+h3.sapana-header {
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 30px;
     font-weight: bold;
     color: rgb(240, 8, 124);
-
 }
 
-p.sapana {
 
+p.sapana {
     text-align: left;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 20px;
     color: rgb(240, 8, 124);
-
 }
 
-
-
 h3.elisabeth-header {
-
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 30px;
     font-weight: bold;
     color: #19a019;
-
 }
 
 
 p.elisabeth {
-
     text-align: left;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 20px;
     color: #19a019;
-
 }
 
 
 h3.nikhila-header {
-
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 30px;
     font-weight: bold;
     color: #7070FF;
-
 }
 
-p.nikhila {
 
+p.nikhila {
     text-align: left;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 20px;
     color: #7070FF;
-
 }
 
 
 h3.mona-header {
-
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 30px;
     font-weight: bold;
     color: #ca2e2e;
-
 }
 
-p.mona {
 
+p.mona {
     text-align: left;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 20px;
     color: #ca2e2e;
-
 }
 
 
 h3.alissa-header {
-
     text-align: center;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 30px;
     font-weight: bold;
     color: #cc5500;
-
 }
 
-p.alissa {
 
+p.alissa {
     text-align: left;
     font-family: "Luminari, Apple Chancery, cursive";
     font-size: 20px;
     color: #cc5500;
-
 }
 
 
+/* Format for results of winter and summer machine learning models */
 .resultw {
-
     width: auto;
     height: auto;
     font-weight: bold;
@@ -356,8 +391,8 @@ p.alissa {
     border-style: ridge   
 }
 
-.results  {
 
+.results  {
     width: auto;
     height: auto;
     font-weight: bold;
