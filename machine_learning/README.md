@@ -23,7 +23,7 @@ Our team has worked with multiple models such as RandomForest, DecisionTree, …
 Using an EasyEnsembleClassifier we were able to achieve recall of 69% for winter model and 64% for summer model.
 
 
-# Ordinal Regression Model Summary
+### Ordinal Regression Model Summary
 
 Ordinal regression at it's core is a type of regression analysis designed to predict an ordinal value. Ordinal values come in many forms such as marketing survey data (agree to disagree scale), movie ratings (1 to 10) or in this case Olympic medals. The model makes use of the fact that there is an order to each value and the order itself is significant. The ordinal regression model used for this task belongs to the statsmodels package. Our independent variables are the same as the original model; age, weight, height, sex, region, and event category. All variables are the same as the original dataset except for event category which is derived from a mix of sports and events, but it should still have a relationship with the dependent variable that the model can use. Our dependent variable is our medals category which consists of gold, silver, bronze, and no medal.
 
