@@ -19,7 +19,7 @@ The purpose of the Olympic Medal Predictions analysis was to develop a website t
     - Easy Ensemble Classifier Winter mdodel: Eeasyensemblew_jlib
     - Easy Ensemble Classifier Summer model: easyensembles_jlib
 - Software/Tools: VSCode, HTML, CSS, Python, Jupyter Notebook, Flask, Joblib, Heroku
-- Weekly Logs (Weeks 1-4): Documentation detailing all tasks and processes completed for creation and deployment of the Olympic Medal Predictions website
+- Website Development Project Logs (Weeks 1-4): Documentation detailing all tasks and processes completed for creation and deployment of the Olympic Medal Predictions website
 
 
 ## The Olympic Medal Predictions website
