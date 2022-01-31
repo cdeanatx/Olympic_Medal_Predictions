@@ -40,11 +40,26 @@
       <div class="jumbotron">
         <p><a class="btn btn-lg center" href="https://olympics.com/en/beijing-2022/news" role="button" target="_blank">Get the Latest Beijing 2022 News!</a></p>
       </div>
-      <p><iframe src="https://giphy.com/embed/26ufmepVftH5Y2V7q" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a class="center" href="https://giphy.com/gifs/animations-olympics-rio-26ufmepVftH5Y2V7q">via GIPHY</a></p>
+      <h2>Olympic Medal Predictions</h2>
+      <p><iframe src="https://giphy.com/embed/26ufmepVftH5Y2V7q" width="700" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a class="center" href="https://giphy.com/gifs/animations-olympics-rio-26ufmepVftH5Y2V7q">via GIPHY</a></p>
+      <p class="welcome">Hello there! The Beijing 2022 Winter Olympics is about to take place and we couldn't be more excited! As stated by the <a href="https://olympics.com/en/olympic-games" target="_blank">official Oympics website:</a> "The Olympic Games are the world's only truly global, 
+        multi-sport, celebratory athletics competition. With more than 200 countries participating in over 400 events across the Summer and Winter Games, the Olympics are where the world comes to compete, feel inspired, and be together." We couldn't agree more!
+        Therefore, our team embarked on a journey to create a website to (1) honor the splendor, camaraderie, and beauty of the Olympics, and (2) showcase our interest in applying machine learning models to predict medaling in the Olympic games. 
+        <ul class="welcome">
+          <li class="homepage-list">Scroll down to read about an ordinal regression model that we developed to predict the chances of winning gold for actual gold medal winners from the PyeongChang 2018 and Tokyo 2020 games!</li>
+          <li class="homepage-list">Follow our data analysis and visualization journey that began with <a href="https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results" target="_blank">an existing Olympics data set</a> by reading our Tableau storyboard on our "Data Viz" page!</li>            
+          <li class="homepage-list">Experience our Easy Ensemble Classifier machine learning model and discover whether or not YOU could medal (gold, silver, or bronze) in a winter or summer Olympics sport on our "Interact" page!</li>
+          <li class="homepage-list">Learn more about us and our unique contributions to this website on our "About Us" page! </li>
+        </ul>
+        <p class="welcome">We hope you enjoy your visit to our website! And we hope you will join us in watching the Beijing 2022 Winter Olympics!</p>
+      <h2>Ordinal Regression Model Analysis</h2>
       <br>
+      <p class="ordinal-model">An ordinal regression model allows a user to take ranked data and find meaning in the order rather than ignore it. We used this type of model to predict medal 
+        chances of Olympic winners from both winter and summer Olympics. Using data from 1964 to 2016 to train the dataset, we predicted the chances of winning gold for 
+        known gold medal winners from PyeongChang 2018 and Tokyo 2020. Our results show a wide range of probabilities, which shows Olympic winners are never guaranteed and 
+        must always beat the odds to win!</p>
       <br>
-      <p>An ordinal regression model allows a user to take ranked data and find meaning in the order rather than ignore it. We used this type of model to predict medal chances of Olympic winners from both winter and summer Olympics. Using data from 1964 to 2016 to train the dataset, we predicted the chances of winning gold for known gold medal winners from PyeongChang 2018 and Tokyo 2020. Our results show a wide range of probabilities, which shows Olympic winners are never guaranteed and must always beat the odds to win!</p>
-      <h3 class="center">Winter 2018 PyeongChang</h3>
+      <h3 class="header-omodel">Winter 2018 PyeongChang</h3>
       <style type="text/css">
         .tg  {border-collapse:collapse;border-spacing:0;margin-left: auto; margin-right: auto; }
         .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -258,7 +273,7 @@
         </table>
     <br>          
     <br>
-    <h3 class="center">Summer 2020 Tokyo</h3>
+    <h3 class="header-omodel">Summer 2020 Tokyo</h3>
     <style type="text/css">
       .tg  {border-collapse:collapse;border-spacing:0;}
       .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -482,11 +497,7 @@
       </table>
       <br>
       <br>
-      </div>
-        
- 
+      </div>     
     </div>   
- 
   </body>
-
   </html>

@@ -33,79 +33,76 @@
           </ul>
       </nav>
 
-
     <div class="container">
       <div class="redteam">
         <h2>The Red Team</h2> 
-
       <p><iframe src="https://giphy.com/embed/pqF0XgikpN3dswzvws" width="416" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a class="center" href="https://giphy.com/gifs/olympics-pqF0XgikpN3dswzvws">via GIPHY</a></p>        
-
-
-            <h3 class="curtis-header">Curtis Dean&#129351;</h3>
-            <p class="curtis">My responsibilities for this project were largely related to EDA, plus any associated visualizations, and git workflow. I utilized R’s Tidyverse 
-              (mostly dplyr and ggplot) packages in my analysis. The first step was to determine how much of the data to use. I analyzed the percentage of missing values in biometric 
-              categories (age, height, weight) vs. the percentage of the overall data and developed a staggered bar chart to make the decision-making easier. I recommended 1964 as the 
-              cutoff point, since it allowed us to remove around 85% of the missing values, while maintaining 70% of the overall data points. Next, we needed to determine how to handle 
-              Olympic sports/events. For example, Alpine Skiing (sport) has 6 different events. In some cases, it was reasonable to collapse the different events into a single “event 
-              category,” while other times the sport was too broad and not at all representative of the different events. These sports were identified by looking at the summary statistics 
-              of the biometric data for each event, partitioned by “sex” of the participants. We ultimately decided to remove “team sports” (like Baseball) from the dataset and create 
-              subcategories for sports with large variances in biometric data across the associated events. Finally, I created our GitHub repository and have been responsible for creating/merging 
-              feature branches and dictating git workflow.</p>
-            <br><br>
-            <h3 class="sapana-header">Sapana Donde&#129351;</h3>
-            <p class="sapana">My journey through this project led me down an unexpected life-altering path...one that I could not have predicted at its outset. I decided to take on the role of 
-              building our website that included both front end and back end web development tasks. My intention was to craft a website that would (1) generate excitement for the upcoming Beijing 
-              Olympics 2022; (2) provide a unique, beautiful sensory experience for the user by including music and visually appealing content; and (3) showcase the special talents, hard work, and 
-              brilliance of my fellow teammates. As the web developer, I was responsible for completing the technical coding of each webpage comprising our website in HTML and CSS; building a Flask 
-              app in Python that would run our website on a server; channeling my passion for creativity and artistry into web design; and utilizing project management and leadership skills to effectively 
-              collaborate with, encourage, and support my fellow team members both individually and collectively. I am extremely proud of the amazing efforts and phenomenal work of my teammates. But, most 
-              of all, I am thrilled that this experience has awakened and illuminated a career path for me that encompasses everything I love most, i.e., creativity/artistry, data management and quality 
-              assurance, implementing and honing technical skills, working both independently and collaboratively with others; and participating in bringing complex project ideas to life. As a result 
-              of my participation in this group project, I am now embarking on a new adventure towards pursuing a career as a full-stack web developer!
-            </p>
-            <br><br>
-            <h3 class="mona-header">Mona Elahi&#129351;</h3>
-            <p class="mona">
-              Hi, I’m Mona. For this project I have worked on a machine learning prediction model of winning a medal based on a person’s biometric data. 
-              I first label encoded the data, then split the dataframe into winter and summer data and then trained and tested the data. I created a make_pipeline 
-              and used Iterative Imputer, StandardScaler and models in the pipeline. The two models I used were Random Forest Classifier and Decision Tree Classifier 
-              for predicting a person’s chances of winning a medal, which gave a very low recall score. i.e., for winter RFC 31% and DTC 35% and for summer RFC 26% and 
-              DTC 34%. To improve the performance of our model, I used the combination of oversampling the minority (Medal) class and undersampling the majority (no medal) 
-              class. I applied SMOTE for over sampling and RandomUnderSampler for under sampling, which gave me 69% for winter and 65% for summer data. I absolutely enjoyed 
-              working with the immensely talented team.</p>
-              <br><br>
-            <h3 class="elisabeth-header">Elisabeth Newman&#129351;</h3>
-            <p class="elisabeth">
-              My responsibilities for this project included aiding the exploratory data analysis group and creating the Tableau visualizations. 
-              For EDA, I used Python and matplotlib to familiarize myself with the data and review the sports with the highest number of unique 
-              events for our Event Category field. As the team wrapped up our EDA, machine learning model, and website deployment, I used Tablaeu 
-              to tell the story of how we got from point A to point B in terms of our original dataset and final dataset. I really enjoyed showcasing 
-              the team's hard work in Tableau, while simultaneously providing the end user with information about both our project and the Olympic athletes' 
-              biometric data!</p>
-              <br><br>
-            <h3 class="nikhila-header"> Nikhila Rentam&#129351;</h3>
-            <p class="nikhila">
-              My responsibilities for this project were to support the machine learning team to create a model to predict if a person would win a medal based 
-              on the bio-metric data (age, height, weight) they enter. I have explored multiple ways to encode the data, impute the null values and create a 
-              model that works with our data. I had an amazing experience discovering the process of creating a model and all the pre-processing steps that go 
-              in it.</p>
-            <br><br>
-            <h3 class="alissa-header">Alissa Roegge&#129351;</h3>
-            <p class="alissa">
-              My tasks for this project were aiding the exploratory data analysis group and creating the ordinal regression model. The data we used contained a 
-              number of former countries in the dataset that would detract from the model so I assigned each former sovereign country's data to the countries that 
-              inherited their history the most.  I also created the ordinal regression model that creates predictions of a person's chances at winning different Olympic 
-              medals, which was an incredibly interesting process. Ordinal regression models use ranked data like survey responses or, in this case, medal types and creates 
-              a model that can estimate someone's chances of ending up in a particular ranked category. During deployment attempts, I contacted the developer on Github for help 
-              understanding some of the issues present in the model, which proved enlightening. In the end, I made a static HTML/CSS table to display results for known gold medalists
-              the 2018 and 2020 Olympic games that were not in our original dataset. While in the end we were unable to deploy the model in an interactive form, I’m very pleased to 
-              still show some results. I thoroughly enjoyed working with this team and contributing in any way I could!</p>
+      <br><br>  
+      <h3 class="alissa-header">Alissa Roegge&#129351;</h3>
+      <p class="alissa">
+        My tasks for this project were aiding the exploratory data analysis group and creating the ordinal regression model. The data we used contained a 
+        number of former countries in the dataset that would detract from the model so I assigned each former sovereign country's data to the countries that 
+        inherited their history the most.  I also created the ordinal regression model that creates predictions of a person's chances at winning different Olympic 
+        medals, which was an incredibly interesting process. Ordinal regression models use ranked data like survey responses or, in this case, medal types and creates 
+        a model that can estimate someone's chances of ending up in a particular ranked category. During deployment attempts, I contacted the developer on Github for help 
+        understanding some of the issues present in the model, which proved enlightening. In the end, I made a static HTML/CSS table to display results for known gold medalists
+        the 2018 and 2020 Olympic games that were not in our original dataset. While in the end we were unable to deploy the model in an interactive form, I’m very pleased to 
+        still show some results. I thoroughly enjoyed working with this team and contributing in any way I could!</p>
+        <br>
+        <br>
+      <h3 class="curtis-header">Curtis Dean&#129351;</h3>
+      <p class="curtis">My responsibilities for this project were largely related to EDA, plus any associated visualizations, and git workflow. I utilized R’s Tidyverse 
+        (mostly dplyr and ggplot) packages in my analysis. The first step was to determine how much of the data to use. I analyzed the percentage of missing values in biometric 
+        categories (age, height, weight) vs. the percentage of the overall data and developed a staggered bar chart to make the decision-making easier. I recommended 1964 as the 
+        cutoff point, since it allowed us to remove around 85% of the missing values, while maintaining 70% of the overall data points. Next, we needed to determine how to handle 
+        Olympic sports/events. For example, Alpine Skiing (sport) has 6 different events. In some cases, it was reasonable to collapse the different events into a single “event 
+        category,” while other times the sport was too broad and not at all representative of the different events. These sports were identified by looking at the summary statistics 
+        of the biometric data for each event, partitioned by “sex” of the participants. We ultimately decided to remove “team sports” (like Baseball) from the dataset and create 
+        subcategories for sports with large variances in biometric data across the associated events. Finally, I created our GitHub repository and have been responsible for creating/merging 
+        feature branches and dictating git workflow.</p>
+        <br>
+        <br>
+      <h3 class="elisabeth-header">Elisabeth Newman&#129351;</h3>
+      <p class="elisabeth">
+        My responsibilities for this project included aiding the exploratory data analysis group and creating the Tableau visualizations. 
+        For EDA, I used Python and matplotlib to familiarize myself with the data and review the sports with the highest number of unique 
+        events for our Event Category field. As the team wrapped up our EDA, machine learning model, and website deployment, I used Tablaeu 
+        to tell the story of how we got from point A to point B in terms of our original dataset and final dataset. I really enjoyed showcasing 
+        the team's hard work in Tableau, while simultaneously providing the end user with information about both our project and the Olympic athletes' 
+        biometric data!</p>
+        <br><br>
+      <h3 class="mona-header">Mona Elahi&#129351;</h3>
+      <p class="mona">
+        Hi, I’m Mona. For this project I have worked on a machine learning prediction model of winning a medal based on a person’s biometric data. 
+        I first label encoded the data, then split the dataframe into winter and summer data and then trained and tested the data. I created a make_pipeline 
+        and used Iterative Imputer, StandardScaler and models in the pipeline. The two models I used were Random Forest Classifier and Decision Tree Classifier 
+        for predicting a person’s chances of winning a medal, which gave a very low recall score. i.e., for winter RFC 31% and DTC 35% and for summer RFC 26% and 
+        DTC 34%. To improve the performance of our model, I used the combination of oversampling the minority (Medal) class and undersampling the majority (no medal) 
+        class. I applied SMOTE for over sampling and RandomUnderSampler for under sampling, which gave me 69% for winter and 65% for summer data. I absolutely enjoyed 
+        working with the immensely talented team.</p>
+        <br><br>
+      <h3 class="nikhila-header"> Nikhila Rentam&#129351;</h3>
+      <p class="nikhila">
+        My responsibilities for this project were to support the machine learning team to create a model to predict if a person would win a medal based 
+        on the bio-metric data (age, height, weight) they enter. I have explored multiple ways to encode the data, impute the null values and create a 
+        model that works with our data. I had an amazing experience discovering the process of creating a model and all the pre-processing steps that go 
+        in it.</p>
+        <br><br>
+      <h3 class="sapana-header">Sapana Donde&#129351;</h3>
+      <p class="sapana">My journey through this project led me down an unexpected life-altering path...one that I could not have predicted at its outset. I decided to take on the role of 
+        building our website that included both front end and back end web development tasks. My intention was to craft a website that would (1) generate excitement for the upcoming Beijing 
+        Olympics 2022; (2) provide a unique, beautiful sensory experience for the user by including music and visually appealing content; and (3) showcase the special talents, hard work, and 
+        brilliance of my fellow teammates. As the web developer, I was responsible for completing the technical coding of each webpage comprising our website in HTML and CSS; building a Flask 
+        app in Python that would run our website on a server; channeling my passion for creativity and artistry into web design; and utilizing project management and leadership skills to effectively 
+        collaborate with, encourage, and support my fellow team members both individually and collectively. I also collaborated with Curtis Dean on website deployment, and with the assistance of his incredible 
+        technical skills, we made our team's website officially go live with Heroku! I am extremely proud of the amazing efforts and phenomenal work of my teammates. But, most 
+        of all, I am thrilled that this experience has awakened and illuminated a career path for me that encompasses everything I love most, i.e., creativity/artistry, data management and quality 
+        assurance, implementing and honing technical skills, working both independently and collaboratively with others; and bringing complex project ideas to life. As a result 
+        of my participation in this group project, I am now embarking on a new adventure towards pursuing a career as a full-stack web developer!
+        </p>
+        <br><br>
        </div>
-    </div>
-     
- 
+    </div>  
     </div>   
- 
   </body>
-
   </html>
