@@ -7,7 +7,7 @@ Our goal is to create a machine learning model to predict if a person would win 
 ### Model2: Medal probability prediction
 This purpose of this repository is to predict probabilities of medaling in various Olympic sports, based on biometric data. 
 ## Resources: 
-Python 3.7.3, Jupyter Notebook 6.0.0, Scikit learn 1.0.0
+Python 3.7.3, Jupyter Notebook 6.0.0, Scikit learn 1.0.0, statsmodels 0.13.0
 
 ## Approach:
 
@@ -33,5 +33,7 @@ medals ~ age + weight + height + C(sex) + C(region) + C(event_category)
 
 where C() denotes that the variable is a categorical variable. The only disadvantage of this method is it is not possible to pickle the results of a formula based model so we could not create an interactive piece of the website like we were able to for the other model.
 
-Through the predict function included in the statsmodels package, we can have the model predict the probability of a set of given (finishing this after lunch!)
+Through the predict function included in the statsmodels package, we can have the model predict the probability of a set of given bio-metric data ending up in each medal category. Due to the fact that these events are highly competitive, the highest categorical result will always be no medal, but ranking the gold probabilities of competitors in a given field can give us insight into exactly what makes someone more likely to win gold in a given event category. For instance, if a region has won gold in the prior olympics for that event category, the gold chance of the next competitor from that region is boosted. If we look at the real life context of the olympics, this result makes sense. Many countries invest heavily in a handful of categories and find continued success in them, for example Kosovo has recently found success in winning gold at the Olympics in judo, but from the number of competitors they field in that event versus others it shows that their investment is higher in judo versus other events.
+
+Through this model we can not only make predictions about future competitors but also understand more about how countries choose to compete in the Olympics, which is invaluable insight into the Olympic medalling process.
 
