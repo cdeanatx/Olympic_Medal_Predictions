@@ -12,13 +12,14 @@ The purpose of the Olympic Medal Predictions analysis was to develop a website t
  - The "Interact!" page allows visitors to experience our Easy Ensemble Classifier machine learning model in order to discover whether or not they could medal (gold, silver, or bronze) in a winter or summer Olympics sport. The page features two interactive, dynamic forms where visitors can enter their and/or other biometric data and obtain a prediction result of whether or not they would medal in a winter or summer Olympic sport.
 
 ## Resources
-- Data Sources    
+- Data Sources:    
     - Original Kaggle dataset:       
     https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results
     - Team Red's final dataset: final_olympic_data.csv
     - Easy Ensemble Classifier Winter mdodel: Eeasyensemblew_jlib
     - Easy Ensemble Classifier Summer model: easyensembles_jlib
 - Software/Tools: VSCode, HTML, CSS, Python, Jupyter Notebook, Flask, Joblib, Heroku
+- Website Development Project Logs (Weeks 1-4): Documentation detailing all tasks and processes completed for creation and deployment of the Olympic Medal Predictions website
 
 
 ## The Olympic Medal Predictions website
