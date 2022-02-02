@@ -1,4 +1,4 @@
-# Olympics Analysis -- Web Development
+# Olympic Medal Predictions - Web Development
 
 ## Overview of Olympic Medal Predictions analysis 
 The purpose of the Olympic Medal Predictions analysis was to develop a website to (1) honor the splendor, camaraderie, and beauty of the Olympics, and (2) showcase our team's (Team Red) interest in applying machine learning models to predict medaling in the Olympic games. The website features four individual webpages:

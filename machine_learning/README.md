@@ -1,4 +1,4 @@
-# Olympic Medal Predictions
+# Olympic Medal Predictions – Machine Learning
 
 ## Overview:
 
