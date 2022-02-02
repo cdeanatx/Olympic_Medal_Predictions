@@ -27,7 +27,7 @@ Contributors: Curtis Dean and Sapana Donde
 
 We leverage many tools in our project in order to accomplish our goals. Below is a list of tools/languages used in the project.
 
-- Heroic - Used for web deployment
+- Heroku - Used for web deployment
 - HTML/CSS - Used for web development
 - Python - Used for machine learning
   - Pandas, Numpy, Scipy, Scikit-learn, Imbalanced-learn, Statsmodels, Matplotlib
