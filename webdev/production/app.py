@@ -10,7 +10,7 @@ import joblib
 #Initialize Flask and set the template folder to "template"
 app = Flask(__name__, template_folder = 'templates')
 
-#create our "home" route using the "parent.html" page
+#create our "home" route using the "index.html" page
 @app.route('/')
 def home():
     return redirect("/index")
